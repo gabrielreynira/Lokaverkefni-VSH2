@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicing and Dungeoneering</title>
+	<link rel="icon" href="Dicing and Dungeoneering.png">
+
+	<link rel="stylesheet" href="noramlize.css">
+	<link rel="stylesheet" href="Lokaverkefni.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<!-- Gotten from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+	<script type="text/javascript">
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}</script>
+	
+	<div class="Header-color">
+		<a class="selection-Screen" href="">Front Page</a>
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Classes</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="#">Barbarian</a>
+    		<a href="#">Bard</a>
+    		<a href="#">Druid</a>
+    		<a href="#">Fighter</a>
+  		</div>
+	</div>
+		<a class="selection-Screen" href="">Timetable</a>
+		<a class="selection-Screen" href="">Registration</a> 
+		<a class="selection-Screen" href="">About us</a>
+	</div>
+		
+	<div>
+		About us!
+	</div>
+	<div>
+		This is a page that will be about us and all the need to know about this great site
+	</div>
+</body>
+</html>
