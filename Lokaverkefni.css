@@ -15,6 +15,60 @@ body.responsive-enabled #site {
 	background: #990000;
 }
 
+/*Slider Under the header*/
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    30%{
+        left: -100%;
+    }
+    40%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    60%{
+        left: -200%;
+    }
+    70%{
+        left: -300%;
+    }
+    80%{
+        left: -300%;
+    }
+    90%{
+        left: -400%
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: slider 25s infinite;
+}
+
 /*Gotten From https://www.w3schools.com/howto/howto_js_dropdown.asp*/
 
 /* Dropdown Button */
