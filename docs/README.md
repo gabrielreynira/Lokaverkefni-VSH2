@@ -6,4 +6,4 @@ As well as helping players excel at their class, Dicing and Dungeoneering also o
 
 Our target demographics range from 14-31, but Dungeons and Dragons has always been a game for people of all ages, sexes, nationalities, and ethnicities, and will continue to do so. This range is just the age of persons we expect to engage with our content. 
 
-test
+https://gabrielreynira.github.io/Lokaverkefni-VSH2/
