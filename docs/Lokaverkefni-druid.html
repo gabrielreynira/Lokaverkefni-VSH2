@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicing and Dungeoneering</title>
+	<link rel="icon" href="Dicing and Dungeoneering.png">
+
+	<link rel="stylesheet" href="noramlize.css">
+	<link rel="stylesheet" href="Lokaverkefni.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<!-- Gotten from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+	<script type="text/javascript">
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}</script>
+	
+	<div class="Header-color">
+		<a class="selection-Screen" href="Lokaverkefni.html">Front Page</a>
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Classes</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="Lokaverkefni-barbarian.html">Barbarian</a>
+    		<a href="Lokaverkefni-bard.html">Bard</a>
+    		<a href="Lokaverkefni-druid.html">Druid</a>
+    		<a href="Lokaverkefni-fighter.html">Fighter</a>
+  		</div>
+	</div>
+		<a class="selection-Screen" href="Lokaverkefni-reg.html">Registration</a>
+		<a class="selection-Screen" href="Lokaverkefni-guide.html">Video Guides</a> 
+	</div>
+	<div id="slider">
+		<!-- Slider -->
+		<figure>
+			<img src="slider/slider-art-1.jpg">
+			<img src="slider/slider-art-2.png">
+			<img src="slider/slider-art-3.jpg">
+			<img src="slider/slider-art-4.jpg">
+			<img src="slider/slider-art-5.jpg">
+		</figure>
+	</div>
+	
+	<article class="backgroundfortext">
+		
+		<div class="headerfortext">
+			Druid
+		</div>
+
+		<div class="smallfortext">
+			A lovely philosophy about the druid, and one that I wholeheartedly agree with, is that the druid doesn’t care about any one tree(unless it’s some really special tree). Trees burn, they wither, and they die. What the druid cares about is the big picture, the forest as a whole, nature itself.
+		</div>
+
+		<div class="smallfortext">
+			The druids in the fifth edition of Dungeons and Dragons can serve many roles, and do so well. They serve as effective healers, they have invaluable spells for a survival-focused campaigns and with their amazing Wild Shape ability, they’re can, for a time, serve as hardy tanks and dish out large amounts of damage.
+		</div>
+
+		<div class="smallfortext">
+			The Circle of the Moon has long been the most popular path for druids to walk. Wild Shape is often the most fun and interesting feature of the druid class and this circle’s propensity for Wild Shape makes it an obvious choice.
+		</div>
+
+	</article>
+</body>
+</html>

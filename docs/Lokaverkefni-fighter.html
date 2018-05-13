@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicing and Dungeoneering</title>
+	<link rel="icon" href="Dicing and Dungeoneering.png">
+
+	<link rel="stylesheet" href="noramlize.css">
+	<link rel="stylesheet" href="Lokaverkefni.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<!-- Gotten from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+	<script type="text/javascript">
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}</script>
+	
+	<div class="Header-color">
+		<a class="selection-Screen" href="Lokaverkefni.html">Front Page</a>
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Classes</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="Lokaverkefni-barbarian.html">Barbarian</a>
+    		<a href="Lokaverkefni-bard.html">Bard</a>
+    		<a href="Lokaverkefni-druid.html">Druid</a>
+    		<a href="Lokaverkefni-fighter.html">Fighter</a>
+  		</div>
+	</div>
+		<a class="selection-Screen" href="Lokaverkefni-reg.html">Registration</a>
+		<a class="selection-Screen" href="Lokaverkefni-guide.html">Video Guides</a> 
+	</div>
+	<div id="slider">
+		<!-- Slider -->
+		<figure>
+			<img src="slider/slider-art-1.jpg">
+			<img src="slider/slider-art-2.png">
+			<img src="slider/slider-art-3.jpg">
+			<img src="slider/slider-art-4.jpg">
+			<img src="slider/slider-art-5.jpg">
+		</figure>
+	</div>
+	
+	<article class="backgroundfortext">
+		
+		<div class="headerfortext">
+			Fighter
+		</div>
+
+		<div class="smallfortext">
+			The fighter has long been considered a staple in D&D parties, ever since the games’ humble beginnings. A frontline tank, two-handed slaughterer or saber-wielding mage-blade, the fighter is as versatile as he is reliable.
+		</div>
+
+		<div class="smallfortext">
+			Though often considered less exciting than most other classes, the fighter can offer very consistent abilities, mostly in thanks to the fact that most of his abilities recharge on a short rest, rather than the long rest required to regain spells and many abilities. While this makes the fighter less explosive than his magical counterparts, due to those abilities usually being less powerful, it makes the fighter the king of the long day, and allows him to go through many more encounters than most without needing to take a long rest.
+		</div>
+
+		<div class="smallfortext">
+			Specifically in 5th edition, the fighter is a very popular choice for a 2-level multiclass dip, in order to gain access to the very powerful ‘Action Surge’ ability, as a timely Action Surge can make or break a given battle.
+		</div>
+	
+	</article>
+</body>
+</html>

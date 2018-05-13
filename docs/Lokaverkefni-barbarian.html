@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicing and Dungeoneering</title>
+	<link rel="icon" href="Dicing and Dungeoneering.png">
+
+	<link rel="stylesheet" href="noramlize.css">
+	<link rel="stylesheet" href="Lokaverkefni.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<!-- Gotten from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+	<script type="text/javascript">
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}</script>
+	
+	<div class="Header-color">
+		<a class="selection-Screen" href="Lokaverkefni.html">Front Page</a>
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Classes</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="Lokaverkefni-barbarian.html">Barbarian</a>
+    		<a href="Lokaverkefni-bard.html">Bard</a>
+    		<a href="Lokaverkefni-druid.html">Druid</a>
+    		<a href="Lokaverkefni-fighter.html">Fighter</a>
+  		</div>
+	</div>
+		<a class="selection-Screen" href="Lokaverkefni-reg.html">Registration</a>
+		<a class="selection-Screen" href="Lokaverkefni-guide.html">Video Guides</a> 
+	</div>
+	<div id="slider">
+		<!-- Slider -->
+		<figure>
+			<img src="slider/slider-art-1.jpg">
+			<img src="slider/slider-art-2.png">
+			<img src="slider/slider-art-3.jpg">
+			<img src="slider/slider-art-4.jpg">
+			<img src="slider/slider-art-5.jpg">
+		</figure>
+	</div>
+	
+	<article class="backgroundfortext">
+		
+		<div class="headerfortext">
+		Barbarian
+		</div>
+
+		<div class="smallfortext">
+		The barbarian is the physical embodiment of rage. A behemoth of a person clad in naught but scraps of cloth and uses his massive physical frame and impressive power of will to trivialize the blows of his foes, but the complexity of the class do not extend past the double-bladed greataxe and swinging it full-force into the face of his enemies.
+		</div>
+
+		<div class="smallfortext">
+		The barbarians bread and butter is his ability to fly into a barbaric rage, greatly enhancing his abilities at the cost of making him more vulnerable to attacks. Many of the barbarian’s abilities focus on this trade-off; making the barbarian hit more betterer, but making him easier to hit. This dichotomy is what informs the entire class and most of his abilities, and is the cornerstone of the barbarian’s design philosophy.
+		</div>
+
+		<div class="smallfortext">
+		The 5th edition totem barbarian, specifically the bear totem barbarian, is one of the most, if not THE most popular barbarian archetype, as it allows the barbarian to reduce much incoming damage to half of what it would be, greatly increasing the barbarians viability and survivability.
+		</div>
+
+	</article>
+</body>
+</html>

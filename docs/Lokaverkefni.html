@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dicing and Dungeoneering</title>
+	<link rel="icon" href="Dicing and Dungeoneering.png">
+
+	<link rel="stylesheet" href="noramlize.css">
+	<link rel="stylesheet" href="Lokaverkefni.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<!-- Gotten from https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+	<script type="text/javascript">
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        		openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}</script>
+	
+	<div class="Header-color">
+		<a class="selection-Screen" href="Lokaverkefni.html">Front Page</a>
+		<div class="dropdown">
+  			<button onclick="myFunction()" class="dropbtn">Classes</button>
+  		<div id="myDropdown" class="dropdown-content">
+    		<a href="Lokaverkefni-barbarian.html">Barbarian</a>
+    		<a href="Lokaverkefni-bard.html">Bard</a>
+    		<a href="Lokaverkefni-druid.html">Druid</a>
+    		<a href="Lokaverkefni-fighter.html">Fighter</a>
+  		</div>
+	</div>
+		<a class="selection-Screen" href="Lokaverkefni-reg.html">Registration</a>
+		<a class="selection-Screen" href="Lokaverkefni-guide.html">Video Guides</a> 
+	</div>
+	<div id="slider">
+		<!-- Slider -->
+		<figure>
+			<img src="slider/slider-art-1.jpg">
+			<img src="slider/slider-art-2.png">
+			<img src="slider/slider-art-3.jpg">
+			<img src="slider/slider-art-4.jpg">
+			<img src="slider/slider-art-5.jpg">
+		</figure>
+	</div>
+	
+	<article class="backgroundfortext">
+		<div class="headerfortext">
+			Dicing and Dungeoneering
+		</div>
+
+		<div class="smallfortext">
+			Dicing and Dungeoneering is a Dungeons and Dragons related company that specializes in tutorials about and regarding each of the different classes for D&D 5th edition. With our high-quality video content and articles from highly experienced players, Dicing and Dungeoneering can help you play your favourite class to the best of your ability.
+		</div>
+		
+		<div class="smallfortext">
+			As well as helping players excel at their class, Dicing and Dungeoneering also offers a weekly game open for everyone, located at a public venue. You can find more information about this weekly game on our website <a href="Lokaverkefni-reg.html">here</a>.
+		</div>
+
+		<div class="smallfortext">
+			Our target demographics range from 14-31, but Dungeons and Dragons has always been a game for people of all ages, sexes, nationalities, and ethnicities, and will continue to do so. This range is just the age of persons we expect to engage with our content.
+		</div>
+	</article>
+</body>
+</html>
